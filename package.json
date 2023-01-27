@@ -1,0 +1,22 @@
+{
+  "name": "edgin_wep",
+  "version": "1.0.0",
+  "description": "Edgin Web sitesi",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon app.js"
+  },
+  "keywords": [
+    "edgin",
+    "metal",
+    "web"
+  ],
+  "author": "salih",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

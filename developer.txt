@@ -1,0 +1,55 @@
+-html,css,img dosyaları hazırsa yani statik dosyalar
+-Yeni terminal açıp ilk önce "npm init"  yazıyorsun ve belli sorular karşına çıkıyor
+-package name : proje ismi + Enter
+-versin(1.0.0) + Enter
+-description : Açıklama yaz +Enter
+-entry point : klasik "app.js" kullanılır + Enter
+-test command : şimdilik yok ama yazabilirsin + Enter
+git repository : githuba yüklemen lazım o burada yazar + Enter
+-keywords : proje hakkında arasında virgül bırakarak belli kelimeler yaz
+-author : yazar
+license : araştır kendisini bıraktı + Enter
+--package.json oluştu kontrol et :) projemizi bir paket haline getiriyor bu json 
+
+-express paketi yüklememiz gerekiyor onun için terminale
+npm i express yaz + Enter
+-app.js dosyasını statik dosyanın dışında oluştur
+app js içine 
+const express = require('express'); // require etmek lazım
+const app= express(); // bu kodla express çalışıyor 
+-daha sonra https server baglantısını gerçekleştiriyoruz
+-const port = 3000;
+
+app.listen(port, () => {
+  console.log(`App started on port ${port}`);
+});
+yukarıdaki kod ile 3000 servere baglantı  gerçekleştiriyoruz
+-daha sonra nodemon paketi yüklemeliyiz
+"npm i -D nodemon" olarak indirebiliriz
+nodemon yükeleme diğer şekli "npm i --save--dev nodemon"
+sonra pakage.json dosyasına gelip
+debug altında scripts taginde test modülünü sil 
+yerine start:"nodemon app.js" yaz ve "npm start" ile başlat sunucuyu
+-şuan görüntü vermez get requesti ile index html ye yönlendirmen lazım 
+
+app.get("/", (req,res)=>{
+    res.send('İNDEX SAYFASI');
+});
+
+ana sayfa yönlendirme kodu yukarıdak
+-.prettierrc sayfa formatı düzenleme dosyasın
+
+http status code diye aratırsan daha iyi anlarsın status nedir
+
+-githuba yüklüyoruz burada new repo açıp
+-dosyaların tamamını göndermemek için .gitignore yüklicez
+onun için 
+https://www.toptal.com/developers/gitignore
+bu siteye gerçekleştiriyoruz
+oraya "node" yazıyoruz ve + enter // node projesi oluşturdugumuz için
+
+
+
+
+
+
