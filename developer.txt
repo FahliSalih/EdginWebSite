@@ -47,6 +47,9 @@ onun için
 https://www.toptal.com/developers/gitignore
 bu siteye gerçekleştiriyoruz
 oraya "node" yazıyoruz ve + enter // node projesi oluşturdugumuz için
+visual studio da .gitignore dosyası oluşturuyoruz
+-sonra sırayla githuptaki linkleri terminale yapıştırıyoruz
+-githuptaki yazarken read.me oluşturmuyoruz tüm dosyaları yüklesin diye "git add . " yazıyoruz terminale
 
 
 
